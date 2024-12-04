@@ -1,0 +1,14 @@
+{
+    "frontend": [
+        { "ip": ":3000", "weight": 3 },
+        { "ip": ":3000", "weight": 1 }
+    ],
+    "backend": [
+        { "ip": ":8000", "weight": 2 },
+        { "ip": ":8000", "weight": 2 }
+    ],
+    "websocket": [
+        { "ip": ":6000", "weight": 3 },
+        { "ip": ":6000", "weight": 3 }
+    ]
+}

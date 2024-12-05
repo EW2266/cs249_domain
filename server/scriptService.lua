@@ -90,6 +90,7 @@ function M.check_ws_health(server_list)
 
         for attempt = 1, max_retries do
             local sock = require "ngx.socket.tcp".new()
+            
             local ok, err = sock:connect(host, tonumber(port))
 
             if ok then
